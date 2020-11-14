@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://kit.fontawesome.com/fa7cdbc794.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600&family=Roboto:wght@100;300;400;700&display=swap"
+        rel="stylesheet">
+    <title>Rocket Link</title>
+</head>
+<body>
+    <!--Inicio header-->
+    <header>
+        <a href="index.html" id="Titulo"><i class="fas fa-rocket icon-home"></i>Rocket Links</a>
+    </header>
+    <!--Fin header-->
+    <!--Inicio container-->
+    <div class="container">
+        <div class="content">
+            <img src="images/astronaut-office.svg">  
+            <div id="forms">
+                <img src="images/usuario1.svg" id="userIMG" alt="Imagen de perfil"><br> 
+                <form id="form-profile">
+                    <label for="img-url">URL de tu foto de perfil</label><br>
+                    <input type="text" id="img-url" name="img-url">
+                    <label for="ig-user">Usuario de Instagram</label><br>
+                    <input type="text" id="ig-user" name="ig-user"> 
+                    <input type="submit" value="guardar"><br>
+                    <!-- <input type="submit" value="guardar"><br> --> 
+                </form>  
+                <hr>
+                <h4>Nuevo link:</h4> 
+                <form id="form-links">
+                    <div id="muestraAlerta"></div>
+                    <label for="links">Titulo de mi link: </label><br> 
+                    <input type="text" id="titulo-link" name="titulo-link"><br>
+                    <label for="url">URL: </label><br> 
+                    <input type="text" id="url-link" name="url-link">
+                    <input type="submit" value="guardar"><br> 
+                    <!-- <label for="masLinks">Agregar otro link  </label><input type="button" value="+"> --> 
+                </form>
+                <hr>
+                <h4>Mis links:</h4>
+                <div id="misLinks">
+                        
+                </div>
+            </div>
+        </div> 
+        <div class="botonLink">
+            <input type="button" value="Obtener mi Rocket Link">
+        </div>
+    </div>
+    <!--Footer-->
+    <footer>
+        <p>Desarrollado por <a href="https://www.instagram.com/luc_nick18/">@Luc_nick</a></p> 
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
